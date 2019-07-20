@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackpane" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.LoginScreenController">
+   <children>
+      <AnchorPane id="P" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../Style.css">
+         <children>
+            <ImageView fitHeight="494.0" fitWidth="431.0" layoutX="116.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/logo.png" />
+               </image>
+            </ImageView>
+            <Pane fx:id="pane" layoutX="641.0" layoutY="22.0" prefHeight="720.0" prefWidth="642.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <JFXTextField id="txtFld" fx:id="txtFld" alignment="CENTER" focusColor="#6ed9a0" labelFloat="true" layoutX="63.0" layoutY="226.0" prefHeight="57.0" prefWidth="517.0" promptText="User Name" unFocusColor="#6ed9a0">
+                     <font>
+                        <Font name="Century Gothic" size="24.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="txtPass" alignment="CENTER" focusColor="#6ed9a0" labelFloat="true" layoutX="63.0" layoutY="332.0" prefHeight="57.0" prefWidth="517.0" promptText="Password" unFocusColor="#6ed9a0">
+                     <font>
+                        <Font name="Century Gothic" size="24.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXButton fx:id="btnConnect" layoutX="63.0" layoutY="442.0" onMouseClicked="#loginAction" prefHeight="57.0" prefWidth="517.0" text="LOGIN" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="22.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="426.0" layoutY="555.0" prefHeight="31.0" prefWidth="154.0" text="Have A Question ?" textFill="#4e8367" />
+                  <JFXButton alignment="CENTER" layoutX="63.0" layoutY="555.0" prefHeight="30.0" prefWidth="154.0" text="Forget PassWord ?" textFill="#4e8367" />
+               </children></Pane>
+            <FontAwesomeIconView fx:id="closeButton" fill="#6ed9a0" glyphName="TIMES" layoutX="1204.0" layoutY="57.0" onMouseClicked="#closeButtonAction" size="25" />
+            <FontAwesomeIconView fx:id="minimizeButton" fill="#6ed9a0" glyphName="MINUS" layoutX="1144.0" layoutY="58.0" onMouseClicked="#minimizeButtonAction" size="25" wrappingWidth="19.64285659790039" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

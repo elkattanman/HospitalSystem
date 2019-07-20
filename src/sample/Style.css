@@ -1,0 +1,18 @@
+#homeBTNS :hover {
+    -fx-background-color: #ff895e;
+}
+#P{
+    -fx-background-color: #00a75f;
+}
+#txtFld{
+    -fx-text-fill: #6ed9a0;
+}
+#txtPass{
+    -fx-text-fill: #6ed9a0;
+}
+#btnConnect{
+    -fx-background-color:#00a75f ;
+}
+#pane{
+    -fx-background-color: #eceff1
+}

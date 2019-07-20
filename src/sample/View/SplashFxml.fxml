@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #00a75f;" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.SplashController">
+   <children>
+      <ImageView fx:id="logoLabel" fitHeight="232.0" fitWidth="200.0" layoutX="500.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameLabel" layoutX="447.0" layoutY="335.0" text="Hospital assistant" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="helloLabel" layoutX="469.0" layoutY="374.0" prefHeight="79.0" prefWidth="262.0" text="HELLO THERE! , WELCOME TO MY APPLICATION" textAlignment="CENTER" textFill="WHITE" visible="false" wrapText="true">
+         <font>
+            <Font name="Microsoft YaHei UI Light" size="21.0" />
+         </font>
+      </Label>
+      <Pane fx:id="spinnerPane" layoutX="492.0" layoutY="450.0" prefHeight="215.0" prefWidth="215.0" visible="false">
+         <children>
+            <JFXSpinner layoutX="74.0" layoutY="34.0" prefHeight="86.0" prefWidth="97.0" radius="30.0" />
+            <Label layoutX="19.0" layoutY="144.0" prefHeight="38.0" prefWidth="178.0" text="WAIT A FEW SECONDS" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

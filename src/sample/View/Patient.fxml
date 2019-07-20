@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1330.0" stylesheets="@../MangeStyle.css" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.PatientController">
+   <children>
+      <JFXTreeTableView fx:id="treeTableView" layoutX="14.0" layoutY="6.0" prefHeight="680.0" prefWidth="1014.0" stylesheets="@../Style.css" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TreeTableColumn fx:id="nationalidCol" prefWidth="75.0" text="National ID" />
+            <TreeTableColumn fx:id="nameCol" prefWidth="75.0" text="Name" />
+            <TreeTableColumn fx:id="ageCol" prefWidth="75.0" text="AGE" />
+            <TreeTableColumn fx:id="genderCol" prefWidth="75.0" text="GENDER" />
+            <TreeTableColumn fx:id="addressCol" prefWidth="75.0" text="Address" />
+            <TreeTableColumn fx:id="hospitalCol" prefWidth="75.0" text="Hospital" />
+            <TreeTableColumn fx:id="phoneCol" prefWidth="75.0" text="Phone" />
+         </columns>
+         <columnResizePolicy>
+            <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </JFXTreeTableView>
+      <JFXTextField fx:id="searchTF" focusColor="#00d09f" labelFloat="true" layoutX="1027.0" layoutY="14.0" maxWidth="309.0" minWidth="289.0" prefHeight="31.0" prefWidth="309.0" promptText="Search" unFocusColor="#dadada" />
+      <HBox layoutX="1022.0" layoutY="52.0" prefHeight="46.0" prefWidth="326.0" AnchorPane.bottomAnchor="582.0" AnchorPane.leftAnchor="1022.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="52.0">
+         <children>
+            <JFXButton id="BTNS" onAction="#addAction" prefHeight="46.0" prefWidth="81.0" style="-fx-background-color: #00a9e7;" text="ADD" textFill="WHITE" />
+            <JFXButton id="BTNS" onAction="#deleteAction" prefHeight="46.0" prefWidth="81.0" style="-fx-background-color: #00b56f;" text="DELETE" textFill="WHITE" />
+            <JFXButton id="BTNS" onAction="#editAction" prefHeight="46.0" prefWidth="81.0" style="-fx-background-color: #ff5656;" text="EDIT" textFill="WHITE" />
+            <JFXButton id="BTNS" onAction="#clearAction" prefHeight="46.0" prefWidth="81.0" style="-fx-background-color: #273968;" text="CLEAR" textFill="WHITE" />
+         </children>
+      </HBox>
+      <AnchorPane layoutX="1022.0" layoutY="110.0" prefHeight="563.0" prefWidth="320.0" style="-fx-border-color: #00000027;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1022.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="110.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="23.0" prefWidth="140.0" text="MANAGEMENT PANE" textFill="#ababab">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="22.0" layoutY="48.0" prefHeight="484.0" prefWidth="278.0" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="47.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints />
+              </rowConstraints>
+               <children>
+                  <JFXTextField fx:id="nationalidTF" focusColor="#00d087" labelFloat="true" promptText="National ID" unFocusColor="#c9c9c9">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="nameTF" focusColor="#00d087" labelFloat="true" promptText="Name" unFocusColor="#c9c9c9" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <GridPane prefHeight="23.0" prefWidth="282.0" GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <JFXTextField fx:id="ageTF" focusColor="#00d087" labelFloat="true" promptText="Age" unFocusColor="#c9c9c9">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXComboBox fx:id="genderCB" focusColor="#00d087" labelFloat="true" prefHeight="44.0" prefWidth="123.0" promptText="Gender" unFocusColor="#c9c9c9" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </JFXComboBox>
+                     </children>
+                  </GridPane>
+                  <JFXTextField fx:id="addressTF" focusColor="#00d087" labelFloat="true" promptText="Address" unFocusColor="#c9c9c9" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="hospitalTF" focusColor="#00d087" labelFloat="true" promptText="Hospital" unFocusColor="#c9c9c9" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                   <JFXTextField fx:id="phoneTF" focusColor="#00d087" labelFloat="true" promptText="Phone" unFocusColor="#c9c9c9" GridPane.rowIndex="5">
+                       <font>
+                           <Font size="20.0" />
+                       </font>
+                   </JFXTextField>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

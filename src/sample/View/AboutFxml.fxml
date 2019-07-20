@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="680.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="404.0" layoutY="235.0" prefHeight="56.0" prefWidth="473.0" text="Designed &amp; Developed By ">
+         <font>
+            <Font name="Impact" size="45.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="404.0" layoutY="332.0" prefHeight="35.0" prefWidth="200.0" text="Tarek Ragab Soliman">
+         <font>
+            <Font name="KacstArt" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="641.0" layoutY="332.0" prefHeight="35.0" prefWidth="253.0" text="tarekragab.business@gmail.com">
+         <font>
+            <Font name="Arial Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="404.0" layoutY="376.0" prefHeight="35.0" prefWidth="200.0" text="Mohamed Osama Elshwaikh">
+         <font>
+            <Font name="KacstArt" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="407.0" layoutY="419.0" prefHeight="35.0" prefWidth="200.0" text="Eslam Ragab Mostafa">
+         <font>
+            <Font name="KacstArt" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="404.0" layoutY="464.0" prefHeight="35.0" prefWidth="200.0" text="Mohammed Nasser Elsayed">
+         <font>
+            <Font name="KacstArt" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="404.0" layoutY="508.0" prefHeight="35.0" prefWidth="200.0" text="Mostafa Khalid Elkattan">
+         <font>
+            <Font name="KacstArt" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="407.0" layoutY="558.0" prefHeight="35.0" prefWidth="200.0" text="Amr Magdy Mohamed Gmaa">
+         <font>
+            <Font name="KacstArt" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="640.0" layoutY="376.0" prefHeight="35.0" prefWidth="253.0" text="mohamedosama.business@gmail.com">
+         <font>
+            <Font name="Arial Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="641.0" layoutY="558.0" prefHeight="35.0" prefWidth="253.0" text="amrmagdy.business@gmail.com">
+         <font>
+            <Font name="Arial Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="641.0" layoutY="508.0" prefHeight="35.0" prefWidth="253.0" text="mostafaKhalid.business@gmail.com">
+         <font>
+            <Font name="Arial Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="640.0" layoutY="464.0" prefHeight="35.0" prefWidth="253.0" text="mohamednasser.business@gmail.com">
+         <font>
+            <Font name="Arial Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="640.0" layoutY="419.0" prefHeight="35.0" prefWidth="253.0" text="eslamragab.business@gmail.com">
+         <font>
+            <Font name="Arial Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

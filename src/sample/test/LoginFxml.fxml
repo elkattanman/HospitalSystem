@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.test.LoginController">
+   <children>
+      <Pane fx:id="pane1" layoutX="60.0" layoutY="66.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="pane2" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="pane3" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="pane4" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane layoutX="680.0" layoutY="44.0" opacity="0.6" prefHeight="619.0" prefWidth="437.0" style="-fx-background-color: #fff; -fx-background-radius: 50px;">
+         <effect>
+            <DropShadow color="#797979" />
+         </effect>
+         <children>
+            <ImageView fitHeight="218.0" fitWidth="190.0" layoutX="125.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/logo.png" />
+               </image>
+            </ImageView>
+            <JFXTextField alignment="CENTER" focusColor="#2c00de00" layoutX="74.0" layoutY="287.0" maxWidth="289.0" minWidth="184.0" prefHeight="45.0" prefWidth="290.0" promptText="USERNAME" style="-fx-border-color: #0887ff; -fx-border-radius: 50px;" unFocusColor="#0a91ff00">
+               <font>
+                  <Font name="Microsoft YaHei UI" size="21.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField alignment="CENTER" focusColor="#425ba600" layoutX="75.0" layoutY="358.0" maxWidth="289.0" minWidth="192.0" prefHeight="45.0" prefWidth="290.0" promptText="PASSWORD" style="-fx-border-color: #0887ff; -fx-border-radius: 50PX;" unFocusColor="#4d4d4d00">
+               <font>
+                  <Font name="Microsoft YaHei UI" size="21.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="start_btn" layoutX="74.0" layoutY="456.0" onAction="#act" prefHeight="45.0" prefWidth="290.0" style="-fx-background-color: #0887ff; -fx-background-radius: 50PX;" text="GET STARTED" textFill="WHITE" />
+            <JFXButton layoutX="108.0" layoutY="519.0" prefHeight="36.0" prefWidth="213.0" text="FORGOT YOUR PASSWORD ?" textFill="#0ab98d" underline="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
